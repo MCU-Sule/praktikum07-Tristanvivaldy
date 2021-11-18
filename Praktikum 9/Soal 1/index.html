@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name =”author” content=”Tristan 2172032”>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let m = prompt("Berapa mawar yang ingin dibeli? (Rp 5000)");
+        let t = prompt("Berapa tulip yang ingin dibeli? (Rp 8000)");
+        let a = prompt("Berapa anggrek yang ingin dibeli? (Rp 10000)");
+        let u = prompt("Uang yang dibayarkan adalah");
+        let mb = m*5000;
+        let tb = t*8000;
+        let ab = a*10000;
+        let total = mb+tb+ab;
+        let kembalian = u - total;
+        document.write("Anda membeli mawar sebanyak <b>" + m + " bunga </b> dengan harga total Rp." + mb + "<br>");
+        document.write("Anda membeli tulip sebanyak <b>" + t + " bunga </b> dengan harga total Rp." + tb + "<br>");
+        document.write("Anda membeli anggrek sebanyak <b>" + a + " bunga </b> dengan harga total Rp." + ab + "<br>");
+        document.write("Total belanjaan anda <b>Rp." + total + "</b> <br><br>");
+        if (u>total) {
+            document.write("Kembalian anda adalah Rp." + kembalian );
+        }
+        else {
+            document.write("Uang anda tidak mencukupi!");
+        }
+    </script>
+    
+</body>
+</html>
